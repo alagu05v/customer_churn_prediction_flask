@@ -141,7 +141,7 @@ Customerchurn_Flask_XAI/Screenshots/shap.png
 
 ### Downloaded Report
 
-cu
+Customerchurn_Flask_XAI/Screenshots/report.png
 
 ---
 
