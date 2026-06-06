@@ -125,7 +125,7 @@ http://127.0.0.1:5000
 
 ### Home Page
 
-Customerchurn_F
+Customerchurn_Flask_XAI/Screenshots/home.png
 
 ### Prediction Form
 
