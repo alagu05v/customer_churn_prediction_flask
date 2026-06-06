@@ -125,11 +125,11 @@ http://127.0.0.1:5000
 
 ### Home Page
 
-_Add screenshot here_
+Customerchurn_F
 
 ### Prediction Form
 
-_Add screenshot here_
+Customerchurn_Flask_XAI/Screenshots/form.png
 
 ### Prediction Result
 
