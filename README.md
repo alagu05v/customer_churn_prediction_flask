@@ -137,7 +137,11 @@ Customerchurn_Flask_XAI/Screenshots/result.png
 
 ### SHAP Explainability
 
-_Add screenshot here_
+Customerchurn_Flask_XAI/Screenshots/shap.png
+
+### Downloaded Report
+
+cu
 
 ---
 
