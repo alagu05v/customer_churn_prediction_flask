@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Churn Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div>
+    <h2>📊 Customer Churn Prediction Dashboard</h2>
+</div>
+
+<div class="main-layout">
+
+    <!-- LEFT FORM CARD -->
+    <div class="card">
+        <h1>Customer Details</h1>
+        <p class="subtext">Enter customer details to predict churn risk.</p>
+
+        <form action="/predict" method="post">
+
+            <label>Gender</label>
+            <select name="gender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+
+            <label>Senior Citizen</label>
+            <select name="senior" required>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+
+            <label>Partner</label>
+            <select name="partner" required>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+
+            <label>Dependents</label>
+            <select name="dependents" required>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+
+            <label>Tenure (Months)</label>
+            <input type="number" name="tenure" required>
+
+            <label>Phone Service</label>
+            <select name="phone" required>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+
+            <label>Internet Service</label>
+            <select name="internet" required>
+                <option value="DSL">DSL</option>
+                <option value="Fiber optic">Fiber optic</option>
+                <option value="No">No</option>
+            </select>
+
+            <label>Contract</label>
+            <select name="contract" required>
+                <option value="Month-to-month">Month-to-month</option>
+                <option value="One year">One year</option>
+                <option value="Two year">Two year</option>
+            </select>
+
+            <label>Payment Method</label>
+            <select name="payment" required>
+                <option value="Electronic check">Electronic check</option>
+                <option value="Mailed check">Mailed check</option>
+                <option value="Bank transfer (automatic)">Bank transfer (automatic)</option>
+                <option value="Credit card (automatic)">Credit card (automatic)</option>
+            </select>
+
+            <label>Monthly Charges</label>
+            <input type="number" step="0.01" name="monthly" required>
+
+            <label>Total Charges</label>
+            <input type="number" step="0.01" name="total" required>
+
+            <button type="submit">🚀 Predict Churn</button>
+
+        </form>
+    </div>
+
+    <!-- RIGHT INFO CARD -->
+    <div class="card info-card">
+        <h1>📌 Project Info</h1>
+        <p class="subtext">Machine Learning Prototype with Explainable AI</p>
+
+        <div class="info-box">
+            <h3>⚙ Model Used</h3>
+            <p>XGBoost Classifier</p>
+        </div>
+
+        <div class="info-box">
+            <h3>📊 Explainability</h3>
+            <p>SHAP Feature Importance</p>
+        </div>
+
+        <div class="info-box">
+            <h3>🎯 Threshold</h3>
+            <p>0.35 (Custom Decision Threshold)</p>
+        </div>
+
+        <div class="info-box">
+            <h3>📝 Output</h3>
+            <p>Churn Prediction + Probability + Top Factors</p>
+        </div>
+
+        <div class="info-box">
+            <h3>💡 Instructions</h3>
+            <p>Fill all fields and click Predict to view churn risk.</p>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

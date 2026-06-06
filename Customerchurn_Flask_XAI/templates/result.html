@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <h2>📊 Customer Churn Prediction Dashboard</h2>
+</div>
+
+<div class="container">
+
+    <h1>Prediction Result</h1>
+
+    <!-- STATUS BADGE -->
+    {% if prediction == "Churn" %}
+        <div class="badge danger">⚠ High Risk: Customer May Churn</div>
+    {% else %}
+        <div class="badge safe">✅ Low Risk: Customer Will Stay</div>
+    {% endif %}
+
+    <h3>Churn Probability: <span class="highlight">{{ probability }}%</span></h3>
+    <p><b>Threshold Used:</b> {{ threshold }}</p>
+
+    <!-- PROGRESS BAR -->
+    <div class="progress-box">
+        <div class="progress-bar" style="width: {{ probability }}%;"></div>
+    </div>
+
+    <br>
+
+    <!-- TOP 5 SHAP REASONS -->
+    <h2>📍 Top 5 SHAP Explanation Factors</h2>
+
+    <table>
+        <tr>
+            <th>Feature</th>
+            <th>SHAP Value</th>
+            <th>Impact</th>
+        </tr>
+
+        {% for row in top5 %}
+        <tr>
+            <td>{{ row.Feature }}</td>
+            <td>{{ row.SHAP_Value }}</td>
+            <td>{{ row.Impact }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <br>
+
+    <!-- SHAP PLOT -->
+    <h2>📊 SHAP Explainable AI Graph</h2>
+    <img src="{{ url_for('static', filename='shap_plot.png') }}" width="650">
+
+    <br><br>
+
+    <!-- BUTTONS -->
+    <div class="btn-group">
+        <a href="/" class="btn">⬅ Back to Dashboard</a>
+        <a href="/download_report" class="btn report">📄 Download Report</a>
+    </div>
+
+</div>
+
+</body>
+</html>
