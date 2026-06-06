@@ -133,7 +133,7 @@ Customerchurn_Flask_XAI/Screenshots/form.png
 
 ### Prediction Result
 
-_Add screenshot here_
+Customerchurn_Flask_XAI/Screenshots/result.png
 
 ### SHAP Explainability
 
