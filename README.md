@@ -155,6 +155,12 @@ Customerchurn_Flask_XAI/Screenshots/report.png
 
 ---
 
+## Demo Video
+
+🎥 Watch the project demo on LinkedIn:
+
+[View Demo Video](https://www.linkedin.com/posts/alagu-v-b2206b251_python-machinelearning-datascience-ugcPost-7472942239539691521-DL34/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD4fhooBfdyArfzZxwCFc17Gojb1LOsg8FA)
+
 ## Author
 
 ### Alagu Vallilingam
