@@ -121,27 +121,28 @@ http://127.0.0.1:5000
 
 ---
 
+
 ## Screenshots
 
 ### Home Page
 
-Customerchurn_Flask_XAI/Screenshots/home.png
+![Home Page](Customerchurn_Flask_XAI/Screenshots/home.png)
 
 ### Prediction Form
 
-Customerchurn_Flask_XAI/Screenshots/form.png
+![Prediction Form](Customerchurn_Flask_XAI/Screenshots/form.png)
 
 ### Prediction Result
 
-Customerchurn_Flask_XAI/Screenshots/result.png
+![Prediction Result](Customerchurn_Flask_XAI/Screenshots/result.png)
 
 ### SHAP Explainability
 
-Customerchurn_Flask_XAI/Screenshots/shap.png
+![SHAP Explainability](Customerchurn_Flask_XAI/Screenshots/shap.png)
 
 ### Downloaded Report
 
-Customerchurn_Flask_XAI/Screenshots/report.png
+![Downloaded Report](Customerchurn_Flask_XAI/Screenshots/report.png)
 
 ---
 
